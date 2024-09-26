@@ -31,9 +31,6 @@ def test_matplotlib(selenium):
 
     import cartopy.crs as ccrs
     import matplotlib.pyplot as plt
-    import pyodide_http
-
-    pyodide_http.patch_all()
 
     ax = plt.axes(projection=ccrs.PlateCarree())
     ax.coastlines()
